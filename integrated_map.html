@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b40abe43de131ac76a53c9ff87b12b4e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b40abe43de131ac76a53c9ff87b12b4e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b40abe43de131ac76a53c9ff87b12b4e = L.map(
+                "map_b40abe43de131ac76a53c9ff87b12b4e",
+                {
+                    center: [-6.2, 106.816666],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_90b812079f0e007a38e7e1809344be0e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b40abe43de131ac76a53c9ff87b12b4e);
+        
+    
+            var marker_cluster_4c024218f5213548d21fde85b71a5b0b = L.markerClusterGroup(
+                {}
+            );
+            map_b40abe43de131ac76a53c9ff87b12b4e.addLayer(marker_cluster_4c024218f5213548d21fde85b71a5b0b);
+        
+    
+            var marker_44a6874efef4ed834fd2e72709738e4b = L.marker(
+                [-6.145665, 106.831332],
+                {}
+            ).addTo(marker_cluster_4c024218f5213548d21fde85b71a5b0b);
+        
+    
+            var icon_3bb03ffc6537da496702a2c79439f78b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_44a6874efef4ed834fd2e72709738e4b.setIcon(icon_3bb03ffc6537da496702a2c79439f78b);
+        
+    
+        var popup_1a3c481cc018e28655dc6a2823d9560b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a23466565112d2e1519578b1de36706 = $(`<div id="html_5a23466565112d2e1519578b1de36706" style="width: 100.0%; height: 100.0%;">Gunung Sahari No. 5 (Gedung Timbul)<br>Points of Interest:<br>Mangga Dua Mall<br>Ancol Dreamland<br>Pasar Senen</div>`)[0];
+            popup_1a3c481cc018e28655dc6a2823d9560b.setContent(html_5a23466565112d2e1519578b1de36706);
+        
+
+        marker_44a6874efef4ed834fd2e72709738e4b.bindPopup(popup_1a3c481cc018e28655dc6a2823d9560b)
+        ;
+
+        
+    
+    
+            var marker_e177185859b391bf2ba68a0e843c5b61 = L.marker(
+                [-6.260719, 106.781616],
+                {}
+            ).addTo(marker_cluster_4c024218f5213548d21fde85b71a5b0b);
+        
+    
+            var icon_dc3ec4d99644ff56f6562188d87a3899 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e177185859b391bf2ba68a0e843c5b61.setIcon(icon_dc3ec4d99644ff56f6562188d87a3899);
+        
+    
+        var popup_2714aaec3cb254f3a6ea7dc7a8feb864 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a3c96bad916ed47c86aee4bfc01e218 = $(`<div id="html_6a3c96bad916ed47c86aee4bfc01e218" style="width: 100.0%; height: 100.0%;">Sultan Iskandar Muda - Pondok Indah (Dekat Masjid)<br>Points of Interest:<br>Pondok Indah Mall<br>Masjid Raya Pondok Indah<br>Pondok Indah Golf Course</div>`)[0];
+            popup_2714aaec3cb254f3a6ea7dc7a8feb864.setContent(html_6a3c96bad916ed47c86aee4bfc01e218);
+        
+
+        marker_e177185859b391bf2ba68a0e843c5b61.bindPopup(popup_2714aaec3cb254f3a6ea7dc7a8feb864)
+        ;
+
+        
+    
+    
+            var marker_a7930047d46b2fdb9abce82730a22920 = L.marker(
+                [-6.181253, 106.794437],
+                {}
+            ).addTo(marker_cluster_4c024218f5213548d21fde85b71a5b0b);
+        
+    
+            var icon_121547c1c3cd3c7fbeeb10a30760bb1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a7930047d46b2fdb9abce82730a22920.setIcon(icon_121547c1c3cd3c7fbeeb10a30760bb1d);
+        
+    
+        var popup_f7dd2ea28e5fd4a67451272418e13cf8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c2e69349c1d35ad087157dd6f890738 = $(`<div id="html_5c2e69349c1d35ad087157dd6f890738" style="width: 100.0%; height: 100.0%;">Letjen S. Parman Kodim<br>Points of Interest:<br>Mall Taman Anggrek<br>Central Park Mall<br>Slipi Jaya Plaza</div>`)[0];
+            popup_f7dd2ea28e5fd4a67451272418e13cf8.setContent(html_5c2e69349c1d35ad087157dd6f890738);
+        
+
+        marker_a7930047d46b2fdb9abce82730a22920.bindPopup(popup_f7dd2ea28e5fd4a67451272418e13cf8)
+        ;
+
+        
+    
+    
+            var marker_ead04cb36c0c5c3780c6332c837ef255 = L.marker(
+                [-6.186874, 106.778197],
+                {}
+            ).addTo(marker_cluster_4c024218f5213548d21fde85b71a5b0b);
+        
+    
+            var icon_86f394b4dd2d2d2748fa20ac71fedeb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ead04cb36c0c5c3780c6332c837ef255.setIcon(icon_86f394b4dd2d2d2748fa20ac71fedeb3);
+        
+    
+        var popup_dedcf8cb71199e789f48355b88e334e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5715161f8339c93f9c3d3c5b92fecd0 = $(`<div id="html_c5715161f8339c93f9c3d3c5b92fecd0" style="width: 100.0%; height: 100.0%;">JPO Arjuna arah Tangerang<br>Points of Interest:<br>Mall Daan Mogot<br>Green Sedayu Mall<br>Taman Cattleya</div>`)[0];
+            popup_dedcf8cb71199e789f48355b88e334e0.setContent(html_c5715161f8339c93f9c3d3c5b92fecd0);
+        
+
+        marker_ead04cb36c0c5c3780c6332c837ef255.bindPopup(popup_dedcf8cb71199e789f48355b88e334e0)
+        ;
+
+        
+    
+    
+            var marker_a34fdc68ea7cd34fdbf3d81abca5df60 = L.marker(
+                [-6.117664, 106.777553],
+                {}
+            ).addTo(marker_cluster_4c024218f5213548d21fde85b71a5b0b);
+        
+    
+            var icon_5f73ccaf06982104d265a39d5c550272 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a34fdc68ea7cd34fdbf3d81abca5df60.setIcon(icon_5f73ccaf06982104d265a39d5c550272);
+        
+    
+        var popup_0e35389ca621cdffca9174a562af5904 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8173a835c242ba31ce509f4163d0f024 = $(`<div id="html_8173a835c242ba31ce509f4163d0f024" style="width: 100.0%; height: 100.0%;">Tol Sedyatmo - Arah Jakarta<br>Points of Interest:<br>Baywalk Mall Pluit<br>Emporium Pluit Mall<br>Pantai Indah Kapuk (PIK)</div>`)[0];
+            popup_0e35389ca621cdffca9174a562af5904.setContent(html_8173a835c242ba31ce509f4163d0f024);
+        
+
+        marker_a34fdc68ea7cd34fdbf3d81abca5df60.bindPopup(popup_0e35389ca621cdffca9174a562af5904)
+        ;
+
+        
+    
+</script>
+</html>
