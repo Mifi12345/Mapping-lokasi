@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapping Lokasi Billboard</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <style>
+        #map {
+            height: 100vh;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Mapping Lokasi Billboard</h1>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        const map = L.map('map').setView([-6.200000, 106.816666], 11);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        const locations = [
+            {
+                name: "Gunung Sahari No. 5 (Gedung Timbul)",
+                coords: [-6.145665, 106.831332],
+                interest: ["Mangga Dua Mall", "Ancol Dreamland", "Pasar Senen"]
+            },
+            {
+                name: "Sultan Iskandar Muda - Pondok Indah (Dekat Masjid)",
+                coords: [-6.260719, 106.781616],
+                interest: ["Pondok Indah Mall", "Masjid Raya Pondok Indah", "Pondok Indah Golf Course"]
+            },
+            {
+                name: "Letjen S. Parman Kodim",
+                coords: [-6.181253, 106.794437],
+                interest: ["Mall Taman Anggrek", "Central Park Mall", "Slipi Jaya Plaza"]
+            },
+            {
+                name: "JPO Arjuna arah Tangerang",
+                coords: [-6.186874, 106.778197],
+                interest: ["Mall Daan Mogot", "Green Sedayu Mall", "Taman Cattleya"]
+            },
+            {
+                name: "Tol Sedyatmo - Arah Jakarta",
+                coords: [-6.117664, 106.777553],
+                interest: ["Baywalk Mall Pluit", "Emporium Pluit Mall", "Pantai Indah Kapuk (PIK)"]
+            }
+        ];
+
+        locations.forEach(loc => {
+            const popupText = `<b>${loc.name}</b><br>Points of Interest:<ul>` +
+                loc.interest.map(i => `<li>${i}</li>`).join('') + '</ul>';
+
+            L.marker(loc.coords).addTo(map).bindPopup(popupText);
+        });
+    </script>
+</body>
+</html>
